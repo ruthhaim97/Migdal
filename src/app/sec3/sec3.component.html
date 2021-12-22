@@ -1,0 +1,15 @@
+ <div class="container">
+    <h3>ריכוז אנשי קשר</h3>
+    <div style="display: flex;"> 
+        <p>מספר אנשי קשר בתהליך: {{ contactList.length }}</p>
+        <button (click)="addProcessToContact()">
+            הוספת מבוטח
+        </button>
+        <button (click)="deleteAll()">
+            איפוס מלא
+        </button>
+        <button (click)="deleteContacts()">
+            איפוס אנשי קשר
+        </button>
+    </div>
+</div>

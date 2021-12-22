@@ -1,0 +1,16 @@
+.sec1 {
+    display: flex;
+}
+
+button {
+    background-color: #22649d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }

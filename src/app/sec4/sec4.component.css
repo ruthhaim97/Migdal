@@ -1,0 +1,41 @@
+
+.contact-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .contact-table td, .contact-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .contact-table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .contact-table tr:hover {background-color: #ddd;}
+  
+  .contact-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: right;
+    background-color: rgba(164, 197, 207, 0.726);
+  }
+
+  h3 {
+    background-color: rgb(149 192 205 / 86%);
+    padding: 5px 20px;
+    margin-left: 50%;
+}
+
+button {
+  background-color: #22649d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}

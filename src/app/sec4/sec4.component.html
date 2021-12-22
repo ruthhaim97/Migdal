@@ -1,0 +1,25 @@
+
+    <div class="container table-div"> 
+      <h3>אנשי קשר</h3>
+      <table class="contact-table">  
+        <thead>  
+            <tr>  
+              <th>שם איש קשר</th>  
+              <th>סוג</th>  
+              <th>כתובת</th>  
+              <th>טלפון נייד</th>  
+              <th>דוא"ל</th>  
+            </tr>
+        </thead>  
+        <tbody>  
+          <tr *ngFor="let contact of contactPersons"> 
+            <td>{{ contact.firstName + " " + contact.lastName}}</td>  
+            <td>{{ contact.type.value }}</td>  
+            <td>{{ contact.address.cityName +  ", " + contact.address.streetName}}</td>  
+            <td>{{ contact.cellPhone | phone}}</td>  
+            <td>{{ contact.email }}</td>  
+          </tr>  
+        </tbody>  
+      </table>  
+      <button (click)="addNewContact()">הוסף איש קשר</button>
+    </div>  

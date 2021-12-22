@@ -1,0 +1,25 @@
+<div class="container sec1">
+    <div style="padding: 0px 0px;">
+        <span class="ims-text" >תביעת אל: {{inProcess.superClaim.superClaimStatus.value}}</span>
+    </div>
+    <div style="padding: 0px 28px;">
+        <span class="invalid-text" style="color: red;" *ngIf="hasIrragularMark()">חריגה</span>
+        <span class="invalid-text" style="color: red;" *ngIf="inProcess.superClaim.inquiryPorcessFlag">{{claimRemarks()}}</span>
+    </div>
+    <div style="padding: 0px 28px;">
+        <span class="ims-text">מצב תביעה: </span>
+        <span class="ims-text" >{{inProcess.superClaim.superClaimStatus.value}}</span>
+    </div>
+    <div style="padding: 0px 28px;">
+        <span class="invalid-text" *ngIf="inProcess.superClaim.deathAfterDisabilityFlag">פטירה מנכות</span>
+    </div>
+    <div style="padding: 0px 28px;">
+        <span class="ims-text">תביעות משתתפות: </span>
+        <span class="ims-text long-text width-percent-40" >{{getClaims()}}</span>
+    </div>
+    <div >
+        <button class="button button-dark" (click)="executeRefresh()">
+           רענון תהליך
+        </button>
+    </div>
+</div>

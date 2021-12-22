@@ -1,0 +1,24 @@
+<div class="container">
+    <h3>ריכוז מידע בתהליך</h3>
+    <div>
+        <p>פרטי מבוטח:</p>
+        <table style="margin-top: 16px;  margin-right: 10px;">
+            <tr>
+                <td style="padding: 0px 28px; font-weight: bold;">{{inProcess.insured.firstName}} {{inProcess.insured.lastName}}</td>
+                <td style="padding: 0px 28px; font-weight: bold;">{{inProcess.insured.identity}}</td>
+                <td style="padding: 0px 28px; font-weight: bold;">{{inProcess.insured.age}}</td>
+                <td style="padding: 0px 28px; font-weight: bold;">{{inProcess.insured.address.streetName}}, {{inProcess.insured.address.cityName}} </td>
+                <td style="padding: 0px 28px; color: red; font-weight: bold;">
+                    <span>{{isCompanyEmployer()}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0px 28px;">שם</td>
+                <td style="padding: 0px 28px;">ת.ז</td>
+                <td style="padding: 0px 28px;">גיל</td>
+                <td style="padding: 0px 28px;">כתובת</td>
+                <td style="padding: 0px 28px;"></td>
+            </tr>
+        </table>
+    </div>
+</div>
